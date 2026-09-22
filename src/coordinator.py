@@ -8,6 +8,7 @@ every other agent is an in-process call using the same typed schema either
 way (see src/agents/schemas.py).
 """
 
+from datetime import datetime
 from typing import Callable, Optional
 
 import requests
@@ -30,7 +31,7 @@ MAX_MEMORY_TURNS = 10
 
 def call_policy_agent(query: str, session_id: str = "-") -> PolicyOutput:
     """Public entry point to the Policy Agent (IR/RAG) - used internally by
-    handle_request(), and also called directly by the UI's Knowledge Base
+    handle_request(), and also called directly by the UI's Help Center
     page so the RAG pipeline can be demoed/tested on its own, without going
     through the full exception-resolution flow."""
     return _call_policy_agent(query, session_id)
@@ -84,10 +85,26 @@ def handle_request(
         return {"final_answer": final_answer, "trace": trace}
 
     if intake.issue_type == "policy_question":
-        progress("Searching policy knowledge base...")
-        policy = _call_policy_agent(intake.summary or raw_text, session_id)
-        trace["policy"] = policy.model_dump()
-        final_answer = policy.answer
+        # Policy questions are intentionally NOT answered here. The chat's
+        # job is exception handling (damaged/late/lost orders); general
+        # policy lookups are redirected to the dedicated Help Center page
+        # so the Policy/IR agent has one clear, demoable entry point.
+        final_answer = (
+            "That looks like a policy question rather than a delivery issue. "
+            "Please use the **Help Center** page to search our policies directly."
+        )
+        _append_memory(session_id, raw_text, final_answer)
+        return {"final_answer": final_answer, "trace": trace, "redirect_to_knowledge": True}
+
+    needs_order_id = intake.issue_type in ("damaged", "late", "lost", "wrong_address")
+    if needs_order_id and not intake.order_id:
+        # Don't run Investigation/Resolution on a case with nothing to
+        # investigate - that produced a confusing "escalated to a human"
+        # message for what's really just a missing order ID. Ask for it
+        # directly instead, like a normal conversation would.
+        final_answer = (
+            "Could you share your order ID (e.g. ORD10017) so I can look into this for you?"
+        )
         _append_memory(session_id, raw_text, final_answer)
         return {"final_answer": final_answer, "trace": trace}
 
@@ -107,13 +124,19 @@ def handle_request(
                      {"username": username, "action": resolution.action}, session_id=session_id)
 
     _append_memory(session_id, raw_text, resolution.final_answer)
-    return {"final_answer": resolution.final_answer, "trace": trace}
+    return {
+        "final_answer": resolution.final_answer,
+        "trace": trace,
+        "action": resolution.action,
+        "escalate_to_human": resolution.escalate_to_human,
+    }
 
 
 def _append_memory(session_id: str, user_text: str, assistant_text: str) -> None:
+    now = datetime.now().strftime("%H:%M")
     history = _session_memory.setdefault(session_id, [])
-    history.append({"role": "user", "text": user_text})
-    history.append({"role": "assistant", "text": assistant_text})
+    history.append({"role": "user", "text": user_text, "timestamp": now})
+    history.append({"role": "assistant", "text": assistant_text, "timestamp": now})
     del history[:-MAX_MEMORY_TURNS * 2]
 
 
