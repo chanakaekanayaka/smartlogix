@@ -1,0 +1,9 @@
+warehouse_id,city,capacity,current_load,has_cold_storage
+WH01,Colombo,1028,333,False
+WH02,Kandy,1301,618,True
+WH03,Galle,1009,860,True
+WH04,Kurunegala,1664,564,True
+WH05,Jaffna,1247,612,False
+WH06,Negombo,854,459,False
+WH07,Matara,1916,1433,True
+WH08,Anuradhapura,1369,1238,False

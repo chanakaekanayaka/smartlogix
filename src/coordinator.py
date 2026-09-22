@@ -1,0 +1,121 @@
+"""
+Coordinator - wires the 4 agents together into one request/response cycle
+and keeps a small per-session conversation memory.
+
+Flow: Intake -> (Investigation + Policy) -> Resolution
+The Policy Agent is called over HTTP (it's a separate FastAPI process);
+every other agent is an in-process call using the same typed schema either
+way (see src/agents/schemas.py).
+"""
+
+from typing import Callable, Optional
+
+import requests
+
+from src.config import POLICY_SERVICE_URL, POLICY_API_KEY
+from src.security.auth import verify_access_token
+from src.utils.logger import log_agent_event
+from src.agents.intake_agent import run_intake_agent
+from src.agents.investigation_agent import run_investigation_agent
+from src.agents.resolution_agent import run_resolution_agent
+from src.agents.schemas import PolicyOutput
+
+# Per-session in-memory history: {session_id: [ {role, text}, ... ]}
+# Deliberately keyed by session_id so one user's history can never leak into
+# another session's context - this is the exact boundary the "Conversation
+# Memory Leakage" individual test (Student 2) will try to break.
+_session_memory: dict[str, list[dict]] = {}
+MAX_MEMORY_TURNS = 10
+
+
+def call_policy_agent(query: str, session_id: str = "-") -> PolicyOutput:
+    """Public entry point to the Policy Agent (IR/RAG) - used internally by
+    handle_request(), and also called directly by the UI's Knowledge Base
+    page so the RAG pipeline can be demoed/tested on its own, without going
+    through the full exception-resolution flow."""
+    return _call_policy_agent(query, session_id)
+
+
+def _call_policy_agent(query: str, session_id: str) -> PolicyOutput:
+    try:
+        resp = requests.post(
+            f"{POLICY_SERVICE_URL}/retrieve",
+            json={"query": query, "session_id": session_id},
+            headers={"X-API-Key": POLICY_API_KEY},
+            timeout=15,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        return PolicyOutput(**data)
+    except requests.RequestException as e:
+        return PolicyOutput(answer=f"Policy service unavailable: {e}", sources=[], chunks=[])
+
+
+def handle_request(
+    raw_text: str,
+    session_id: str,
+    auth_token: str,
+    on_progress: Optional[Callable[[str], None]] = None,
+) -> dict:
+    """
+    on_progress, if given, is called with a short human-readable label each
+    time the pipeline moves to the next agent - purely cosmetic (lets the UI
+    show a live "Investigating... -> Checking policy... -> Deciding..." trail
+    instead of a plain spinner). The pipeline logic itself never depends on
+    it running.
+    """
+    def progress(stage: str) -> None:
+        if on_progress:
+            on_progress(stage)
+
+    username = verify_access_token(auth_token)
+    if not username:
+        return {"error": "unauthorized", "final_answer": "Please log in again."}
+
+    trace = {}
+
+    progress("Reading your message...")
+    intake = run_intake_agent(raw_text, session_id)
+    trace["intake"] = intake.model_dump()
+
+    if intake.status == "blocked":
+        final_answer = "Sorry, that message could not be processed. Please rephrase your request."
+        _append_memory(session_id, raw_text, final_answer)
+        return {"final_answer": final_answer, "trace": trace}
+
+    if intake.issue_type == "policy_question":
+        progress("Searching policy knowledge base...")
+        policy = _call_policy_agent(intake.summary or raw_text, session_id)
+        trace["policy"] = policy.model_dump()
+        final_answer = policy.answer
+        _append_memory(session_id, raw_text, final_answer)
+        return {"final_answer": final_answer, "trace": trace}
+
+    progress("Investigating order records...")
+    investigation = run_investigation_agent(intake, session_id)
+    trace["investigation"] = investigation.model_dump()
+
+    progress("Checking applicable policy...")
+    policy = _call_policy_agent(f"{intake.issue_type} refund policy", session_id)
+    trace["policy"] = policy.model_dump()
+
+    progress("Deciding the resolution...")
+    resolution = run_resolution_agent(intake, investigation, policy, session_id)
+    trace["resolution"] = resolution.model_dump()
+
+    log_agent_event("coordinator", "request_completed",
+                     {"username": username, "action": resolution.action}, session_id=session_id)
+
+    _append_memory(session_id, raw_text, resolution.final_answer)
+    return {"final_answer": resolution.final_answer, "trace": trace}
+
+
+def _append_memory(session_id: str, user_text: str, assistant_text: str) -> None:
+    history = _session_memory.setdefault(session_id, [])
+    history.append({"role": "user", "text": user_text})
+    history.append({"role": "assistant", "text": assistant_text})
+    del history[:-MAX_MEMORY_TURNS * 2]
+
+
+def get_session_history(session_id: str) -> list[dict]:
+    return _session_memory.get(session_id, [])

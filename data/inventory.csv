@@ -1,0 +1,97 @@
+item_id,item_name,category,warehouse_id,stock_qty,fragile,unit_weight_kg,unit_price_lkr
+ITM0001,Mobile Phone (boxed),Electronics,WH01,0,True,0.4,65000
+ITM0002,Book Carton (mixed),General,WH01,8,False,10.0,8000
+ITM0003,Bicycle,Sports,WH01,8,False,14.0,39000
+ITM0004,Queen Mattress,Furniture,WH01,0,False,22.0,45000
+ITM0005,Laptop (boxed),Electronics,WH01,8,True,2.2,210000
+ITM0006,Gas Cooker (4-burner),Appliance,WH01,0,True,18.0,32000
+ITM0007,"Mirror (large, framed)",Homeware,WH01,0,True,9.0,22000
+ITM0008,Washing Machine,Appliance,WH01,0,True,40.0,98000
+ITM0009,Water Filter,Appliance,WH01,12,False,6.0,15500
+ITM0010,Air Conditioner Unit,Appliance,WH01,12,True,35.0,165000
+ITM0011,Refrigerator 250L,Appliance,WH01,0,True,55.0,145000
+ITM0012,43-inch Television,Electronics,WH01,0,True,8.5,75000
+ITM0013,Air Conditioner Unit,Appliance,WH02,8,True,35.0,165000
+ITM0014,Refrigerator 250L,Appliance,WH02,0,True,55.0,145000
+ITM0015,Queen Mattress,Furniture,WH02,12,False,22.0,45000
+ITM0016,Washing Machine,Appliance,WH02,8,True,40.0,98000
+ITM0017,Gas Cooker (4-burner),Appliance,WH02,8,True,18.0,32000
+ITM0018,Sofa Set (3-seater),Furniture,WH02,5,False,60.0,120000
+ITM0019,Office Chair,Furniture,WH02,0,False,12.0,18500
+ITM0020,Laptop (boxed),Electronics,WH02,20,True,2.2,210000
+ITM0021,Ceramic Dinner Set,Homeware,WH02,5,True,7.0,12500
+ITM0022,Sofa Set (3-seater),Furniture,WH03,12,False,60.0,120000
+ITM0023,Washing Machine,Appliance,WH03,2,True,40.0,98000
+ITM0024,Bicycle,Sports,WH03,20,False,14.0,39000
+ITM0025,Book Carton (mixed),General,WH03,20,False,10.0,8000
+ITM0026,Mobile Phone (boxed),Electronics,WH03,0,True,0.4,65000
+ITM0027,Queen Mattress,Furniture,WH03,0,False,22.0,45000
+ITM0028,Ceramic Dinner Set,Homeware,WH03,0,True,7.0,12500
+ITM0029,Gas Cooker (4-burner),Appliance,WH03,0,True,18.0,32000
+ITM0030,Air Conditioner Unit,Appliance,WH03,8,True,35.0,165000
+ITM0031,Water Filter,Appliance,WH03,5,False,6.0,15500
+ITM0032,Refrigerator 250L,Appliance,WH03,0,True,55.0,145000
+ITM0033,Office Chair,Furniture,WH03,5,False,12.0,18500
+ITM0034,Laptop (boxed),Electronics,WH03,0,True,2.2,210000
+ITM0035,"Mirror (large, framed)",Homeware,WH03,2,True,9.0,22000
+ITM0036,Sofa Set (3-seater),Furniture,WH04,20,False,60.0,120000
+ITM0037,Bicycle,Sports,WH04,5,False,14.0,39000
+ITM0038,Washing Machine,Appliance,WH04,0,True,40.0,98000
+ITM0039,Laptop (boxed),Electronics,WH04,0,True,2.2,210000
+ITM0040,Gas Cooker (4-burner),Appliance,WH04,5,True,18.0,32000
+ITM0041,"Mirror (large, framed)",Homeware,WH04,0,True,9.0,22000
+ITM0042,Refrigerator 250L,Appliance,WH04,5,True,55.0,145000
+ITM0043,Book Carton (mixed),General,WH04,2,False,10.0,8000
+ITM0044,Ceramic Dinner Set,Homeware,WH04,20,True,7.0,12500
+ITM0045,Water Filter,Appliance,WH04,20,False,6.0,15500
+ITM0046,Queen Mattress,Furniture,WH04,5,False,22.0,45000
+ITM0047,Air Conditioner Unit,Appliance,WH04,2,True,35.0,165000
+ITM0048,Office Chair,Furniture,WH04,5,False,12.0,18500
+ITM0049,43-inch Television,Electronics,WH04,12,True,8.5,75000
+ITM0050,Mobile Phone (boxed),Electronics,WH04,12,True,0.4,65000
+ITM0051,43-inch Television,Electronics,WH05,0,True,8.5,75000
+ITM0052,Sofa Set (3-seater),Furniture,WH05,8,False,60.0,120000
+ITM0053,Office Chair,Furniture,WH05,0,False,12.0,18500
+ITM0054,Bicycle,Sports,WH05,20,False,14.0,39000
+ITM0055,Refrigerator 250L,Appliance,WH05,0,True,55.0,145000
+ITM0056,Water Filter,Appliance,WH05,0,False,6.0,15500
+ITM0057,Gas Cooker (4-burner),Appliance,WH05,8,True,18.0,32000
+ITM0058,Book Carton (mixed),General,WH05,0,False,10.0,8000
+ITM0059,Queen Mattress,Furniture,WH05,12,False,22.0,45000
+ITM0060,Air Conditioner Unit,Appliance,WH05,20,True,35.0,165000
+ITM0061,Laptop (boxed),Electronics,WH05,0,True,2.2,210000
+ITM0062,"Mirror (large, framed)",Homeware,WH05,5,True,9.0,22000
+ITM0063,Mobile Phone (boxed),Electronics,WH05,0,True,0.4,65000
+ITM0064,Washing Machine,Appliance,WH05,8,True,40.0,98000
+ITM0065,Ceramic Dinner Set,Homeware,WH05,0,True,7.0,12500
+ITM0066,Water Filter,Appliance,WH06,2,False,6.0,15500
+ITM0067,Washing Machine,Appliance,WH06,0,True,40.0,98000
+ITM0068,Mobile Phone (boxed),Electronics,WH06,12,True,0.4,65000
+ITM0069,Book Carton (mixed),General,WH06,12,False,10.0,8000
+ITM0070,Air Conditioner Unit,Appliance,WH06,2,True,35.0,165000
+ITM0071,Ceramic Dinner Set,Homeware,WH06,0,True,7.0,12500
+ITM0072,Gas Cooker (4-burner),Appliance,WH06,2,True,18.0,32000
+ITM0073,Queen Mattress,Furniture,WH06,5,False,22.0,45000
+ITM0074,Book Carton (mixed),General,WH07,0,False,10.0,8000
+ITM0075,Air Conditioner Unit,Appliance,WH07,0,True,35.0,165000
+ITM0076,Office Chair,Furniture,WH07,8,False,12.0,18500
+ITM0077,Laptop (boxed),Electronics,WH07,0,True,2.2,210000
+ITM0078,Queen Mattress,Furniture,WH07,8,False,22.0,45000
+ITM0079,Washing Machine,Appliance,WH07,2,True,40.0,98000
+ITM0080,Refrigerator 250L,Appliance,WH07,0,True,55.0,145000
+ITM0081,Ceramic Dinner Set,Homeware,WH07,2,True,7.0,12500
+ITM0082,"Mirror (large, framed)",Homeware,WH07,0,True,9.0,22000
+ITM0083,Mobile Phone (boxed),Electronics,WH07,0,True,0.4,65000
+ITM0084,Office Chair,Furniture,WH08,2,False,12.0,18500
+ITM0085,43-inch Television,Electronics,WH08,0,True,8.5,75000
+ITM0086,Laptop (boxed),Electronics,WH08,0,True,2.2,210000
+ITM0087,Gas Cooker (4-burner),Appliance,WH08,12,True,18.0,32000
+ITM0088,Air Conditioner Unit,Appliance,WH08,8,True,35.0,165000
+ITM0089,Water Filter,Appliance,WH08,0,False,6.0,15500
+ITM0090,Ceramic Dinner Set,Homeware,WH08,2,True,7.0,12500
+ITM0091,Refrigerator 250L,Appliance,WH08,2,True,55.0,145000
+ITM0092,Queen Mattress,Furniture,WH08,8,False,22.0,45000
+ITM0093,Book Carton (mixed),General,WH08,0,False,10.0,8000
+ITM0094,Bicycle,Sports,WH08,12,False,14.0,39000
+ITM0095,"Mirror (large, framed)",Homeware,WH08,2,True,9.0,22000
+ITM0096,Sofa Set (3-seater),Furniture,WH08,0,False,60.0,120000

@@ -1,0 +1,301 @@
+order_id,customer_name,customer_phone,origin_warehouse_id,origin_city,destination_city,item_id,item_name,courier_id,order_date,status,packaging_label,weather_flag
+ORD10001,Rebecca Henderson,0702548511,WH06,Negombo,Ratnapura,ITM0072,Gas Cooker (4-burner),CR028,2026-06-30,Delivered,Fragile,False
+ORD10002,Kyle Mcdonald,0743710895,WH06,Negombo,Kurunegala,ITM0068,Mobile Phone (boxed),CR027,2026-07-18,Delivered,Fragile,False
+ORD10003,Shannon Smith,0721604451,WH07,Matara,Anuradhapura,ITM0079,Washing Machine,CR018,2026-09-01,Delivered,Fragile,False
+ORD10004,Stephen Potter,0751669324,WH08,Anuradhapura,Matara,ITM0091,Refrigerator 250L,CR019,2026-09-06,Delivered,Fragile,True
+ORD10005,Ashley Graham,0763592974,WH04,Kurunegala,Jaffna,ITM0040,Gas Cooker (4-burner),CR022,2026-08-07,Delivered,Fragile,False
+ORD10006,Nathan Cortez,0761415846,WH03,Galle,Gampaha,ITM0025,Book Carton (mixed),CR006,2026-08-11,In Transit,Standard,False
+ORD10007,Katie Rodriguez,0735476257,WH02,Kandy,Badulla,ITM0021,Ceramic Dinner Set,CR030,2026-08-23,Lost,Fragile,False
+ORD10008,Mark Lynch,0734740036,WH02,Kandy,Nuwara Eliya,ITM0020,Laptop (boxed),CR023,2026-07-08,Delayed,Standard,False
+ORD10009,Christopher Ashley,0715682940,WH01,Colombo,Ratnapura,ITM0003,Bicycle,CR007,2026-09-21,Delivered,Standard,False
+ORD10010,April Nguyen,0702935113,WH04,Kurunegala,Ratnapura,ITM0040,Gas Cooker (4-burner),CR017,2026-06-25,In Transit,Fragile,False
+ORD10011,Jack Galloway,0798290770,WH08,Anuradhapura,Negombo,ITM0095,"Mirror (large, framed)",CR006,2026-09-10,In Transit,Fragile,True
+ORD10012,Anthony Humphrey,0764188992,WH04,Kurunegala,Badulla,ITM0040,Gas Cooker (4-burner),CR026,2026-07-01,Delivered,Fragile,False
+ORD10013,John Jones,0737110622,WH03,Galle,Colombo,ITM0030,Air Conditioner Unit,CR023,2026-09-05,Delivered,Fragile,False
+ORD10014,Beth Keller,0716038571,WH04,Kurunegala,Kandy,ITM0046,Queen Mattress,CR022,2026-08-16,Damaged,Standard,False
+ORD10015,Joseph Obrien,0743135534,WH05,Jaffna,Negombo,ITM0052,Sofa Set (3-seater),CR022,2026-07-14,Delivered,Standard,False
+ORD10016,Nicole Vaughn,0726049101,WH03,Galle,Kurunegala,ITM0022,Sofa Set (3-seater),CR022,2026-09-01,Lost,Standard,False
+ORD10017,Zachary Santos,0758801207,WH04,Kurunegala,Batticaloa,ITM0044,Ceramic Dinner Set,CR027,2026-08-05,Damaged,Standard,False
+ORD10018,Jocelyn Wright,0722422633,WH04,Kurunegala,Anuradhapura,ITM0047,Air Conditioner Unit,CR022,2026-06-30,Delivered,Fragile,False
+ORD10019,Kevin Hall,0736207974,WH03,Galle,Batticaloa,ITM0033,Office Chair,CR022,2026-07-15,Delivered,Standard,False
+ORD10020,Michael Brown,0772221854,WH03,Galle,Nuwara Eliya,ITM0024,Bicycle,CR007,2026-06-30,Delivered,Standard,True
+ORD10021,Shannon Jones,0769294272,WH04,Kurunegala,Kurunegala,ITM0048,Office Chair,CR029,2026-07-17,Delivered,Standard,False
+ORD10022,John Ryan,0718132769,WH04,Kurunegala,Jaffna,ITM0044,Ceramic Dinner Set,CR005,2026-09-02,Delivered,Fragile,False
+ORD10023,Laura Kennedy,0705180853,WH03,Galle,Galle,ITM0024,Bicycle,CR026,2026-09-08,Lost,Standard,False
+ORD10024,Jason Davis,0786323376,WH08,Anuradhapura,Kandy,ITM0092,Queen Mattress,CR015,2026-08-26,Delivered,Standard,False
+ORD10025,Jeff Owens,0788481188,WH07,Matara,Kalutara,ITM0081,Ceramic Dinner Set,CR015,2026-09-02,Delayed,Fragile,False
+ORD10026,Matthew Lucas,0749745959,WH02,Kandy,Badulla,ITM0020,Laptop (boxed),CR028,2026-06-29,Delivered,Fragile,False
+ORD10027,Gerald Hensley,0746634586,WH04,Kurunegala,Ratnapura,ITM0050,Mobile Phone (boxed),CR008,2026-07-18,Delivered,Fragile,False
+ORD10028,Joshua Taylor,0763563646,WH04,Kurunegala,Kalutara,ITM0036,Sofa Set (3-seater),CR018,2026-07-11,Delivered,Standard,False
+ORD10029,David Leblanc,0738048838,WH07,Matara,Jaffna,ITM0076,Office Chair,CR003,2026-08-06,Delayed,Standard,False
+ORD10030,Savannah Garcia,0797381734,WH04,Kurunegala,Kalutara,ITM0043,Book Carton (mixed),CR025,2026-08-26,Delivered,Standard,False
+ORD10031,Dr. Tracy House DVM,0764700025,WH04,Kurunegala,Colombo,ITM0049,43-inch Television,CR012,2026-07-10,Delivered,Fragile,False
+ORD10032,John Hancock,0763768991,WH04,Kurunegala,Jaffna,ITM0050,Mobile Phone (boxed),CR009,2026-09-19,Delivered,Fragile,False
+ORD10033,James Galloway,0791454696,WH08,Anuradhapura,Anuradhapura,ITM0091,Refrigerator 250L,CR030,2026-07-19,Damaged,Standard,False
+ORD10034,Rachel Mitchell,0738628588,WH02,Kandy,Ratnapura,ITM0013,Air Conditioner Unit,CR014,2026-08-30,Damaged,Standard,False
+ORD10035,Whitney Peters,0765232413,WH04,Kurunegala,Matara,ITM0036,Sofa Set (3-seater),CR025,2026-09-01,Damaged,Standard,False
+ORD10036,Mr. Daniel Brown,0711675419,WH08,Anuradhapura,Kandy,ITM0091,Refrigerator 250L,CR016,2026-09-03,Delivered,Standard,False
+ORD10037,Nicole Brown,0728945036,WH07,Matara,Colombo,ITM0081,Ceramic Dinner Set,CR008,2026-08-19,Delivered,Fragile,False
+ORD10038,Thomas Schmidt,0753815034,WH06,Negombo,Kandy,ITM0070,Air Conditioner Unit,CR019,2026-06-29,Delivered,Fragile,False
+ORD10039,Angela Lopez,0706233774,WH05,Jaffna,Trincomalee,ITM0064,Washing Machine,CR024,2026-08-20,Delayed,Fragile,False
+ORD10040,Scott Powell,0715074336,WH05,Jaffna,Ratnapura,ITM0060,Air Conditioner Unit,CR030,2026-09-18,Delivered,Fragile,False
+ORD10041,Lauren Williams,0711689025,WH02,Kandy,Badulla,ITM0015,Queen Mattress,CR025,2026-07-01,Delivered,Standard,False
+ORD10042,Kevin Mills,0708047416,WH04,Kurunegala,Batticaloa,ITM0040,Gas Cooker (4-burner),CR014,2026-07-19,Delivered,Fragile,False
+ORD10043,Mike Allen,0773566765,WH08,Anuradhapura,Anuradhapura,ITM0090,Ceramic Dinner Set,CR004,2026-08-01,Delivered,Fragile,False
+ORD10044,Matthew Bryant,0789111742,WH04,Kurunegala,Galle,ITM0046,Queen Mattress,CR024,2026-09-04,Delivered,Standard,False
+ORD10045,Alexandra Howell,0732453962,WH04,Kurunegala,Kurunegala,ITM0048,Office Chair,CR027,2026-08-17,Delayed,Standard,False
+ORD10046,Angel Lewis MD,0797358385,WH03,Galle,Kalutara,ITM0031,Water Filter,CR015,2026-07-27,Delivered,Standard,False
+ORD10047,Sherry Wood,0736952975,WH04,Kurunegala,Colombo,ITM0037,Bicycle,CR016,2026-07-09,Damaged,Standard,False
+ORD10048,Joshua Turner,0781170307,WH08,Anuradhapura,Negombo,ITM0088,Air Conditioner Unit,CR011,2026-09-10,Delivered,Fragile,False
+ORD10049,Aimee Montoya,0738987516,WH05,Jaffna,Jaffna,ITM0054,Bicycle,CR003,2026-07-23,Delivered,Standard,False
+ORD10050,Ashley Humphrey,0744717770,WH06,Negombo,Badulla,ITM0069,Book Carton (mixed),CR016,2026-07-19,Delivered,Standard,True
+ORD10051,Brian Tran,0786767292,WH04,Kurunegala,Badulla,ITM0044,Ceramic Dinner Set,CR008,2026-07-20,Delivered,Fragile,False
+ORD10052,Daniel Cooper,0746144280,WH04,Kurunegala,Badulla,ITM0046,Queen Mattress,CR018,2026-08-29,Delivered,Standard,False
+ORD10053,Deborah Freeman,0724213524,WH03,Galle,Jaffna,ITM0030,Air Conditioner Unit,CR004,2026-09-19,Delivered,Fragile,False
+ORD10054,Amber Walters,0795747930,WH03,Galle,Badulla,ITM0023,Washing Machine,CR016,2026-09-12,Delivered,Fragile,False
+ORD10055,Aaron Wise,0741237370,WH02,Kandy,Gampaha,ITM0015,Queen Mattress,CR007,2026-08-24,Delivered,Standard,False
+ORD10056,Candice Ramos,0785901239,WH07,Matara,Batticaloa,ITM0076,Office Chair,CR005,2026-08-31,Delivered,Standard,False
+ORD10057,Adam Jones,0705770422,WH06,Negombo,Galle,ITM0073,Queen Mattress,CR021,2026-09-17,Damaged,Standard,False
+ORD10058,Brittany Johnson,0772914064,WH04,Kurunegala,Anuradhapura,ITM0049,43-inch Television,CR015,2026-07-29,In Transit,Fragile,False
+ORD10059,Brittany Anderson,0723503120,WH08,Anuradhapura,Kandy,ITM0090,Ceramic Dinner Set,CR013,2026-07-23,Delivered,Fragile,False
+ORD10060,Timothy Stanton,0794786401,WH08,Anuradhapura,Trincomalee,ITM0088,Air Conditioner Unit,CR010,2026-06-27,Damaged,Standard,False
+ORD10061,Christine Wright,0798194570,WH08,Anuradhapura,Batticaloa,ITM0084,Office Chair,CR013,2026-07-03,Delivered,Standard,False
+ORD10062,Justin Baxter,0735440025,WH03,Galle,Trincomalee,ITM0035,"Mirror (large, framed)",CR020,2026-08-23,Damaged,Standard,False
+ORD10063,Tammy Young,0768558197,WH06,Negombo,Kandy,ITM0070,Air Conditioner Unit,CR006,2026-07-09,Delivered,Fragile,False
+ORD10064,Rita Keith,0748617381,WH06,Negombo,Trincomalee,ITM0073,Queen Mattress,CR016,2026-06-26,Delivered,Standard,False
+ORD10065,Tim Patton,0738132648,WH01,Colombo,Ratnapura,ITM0010,Air Conditioner Unit,CR008,2026-08-02,Delayed,Fragile,False
+ORD10066,Sharon Cochran,0712000560,WH02,Kandy,Batticaloa,ITM0016,Washing Machine,CR008,2026-07-19,Damaged,Fragile,False
+ORD10067,Michael Reyes,0773086308,WH02,Kandy,Nuwara Eliya,ITM0020,Laptop (boxed),CR010,2026-06-27,Delayed,Fragile,False
+ORD10068,Courtney Velasquez,0789284509,WH04,Kurunegala,Badulla,ITM0048,Office Chair,CR010,2026-08-07,Delivered,Standard,False
+ORD10069,Robert Savage,0714840714,WH04,Kurunegala,Kandy,ITM0047,Air Conditioner Unit,CR020,2026-07-15,Damaged,Standard,False
+ORD10070,Corey Murphy,0741674975,WH06,Negombo,Gampaha,ITM0072,Gas Cooker (4-burner),CR028,2026-09-15,Lost,Fragile,False
+ORD10071,Raymond Bell,0728312936,WH07,Matara,Nuwara Eliya,ITM0081,Ceramic Dinner Set,CR006,2026-08-12,Delivered,Fragile,False
+ORD10072,William Herrera,0752754894,WH06,Negombo,Gampaha,ITM0068,Mobile Phone (boxed),CR016,2026-06-26,Delivered,Fragile,False
+ORD10073,Wesley White,0761615675,WH08,Anuradhapura,Galle,ITM0092,Queen Mattress,CR011,2026-07-19,Delivered,Standard,False
+ORD10074,Kyle Reed,0769633492,WH04,Kurunegala,Kandy,ITM0048,Office Chair,CR011,2026-09-08,Delivered,Standard,False
+ORD10075,Larry Dixon,0787069650,WH08,Anuradhapura,Colombo,ITM0090,Ceramic Dinner Set,CR022,2026-07-31,Delivered,Fragile,True
+ORD10076,Cheryl Williams,0735480460,WH06,Negombo,Nuwara Eliya,ITM0066,Water Filter,CR016,2026-08-05,Delivered,Standard,False
+ORD10077,Timothy Ryan,0773037191,WH05,Jaffna,Galle,ITM0059,Queen Mattress,CR030,2026-09-01,Delivered,Standard,False
+ORD10078,Nancy Gonzalez,0707844947,WH01,Colombo,Ratnapura,ITM0003,Bicycle,CR020,2026-08-04,Delayed,Standard,False
+ORD10079,Matthew Rivera,0729361353,WH02,Kandy,Jaffna,ITM0013,Air Conditioner Unit,CR027,2026-07-24,Delivered,Fragile,False
+ORD10080,Belinda Mccullough,0778922533,WH07,Matara,Negombo,ITM0076,Office Chair,CR017,2026-08-12,Delayed,Standard,False
+ORD10081,Jason Powell,0799526867,WH03,Galle,Anuradhapura,ITM0025,Book Carton (mixed),CR018,2026-07-22,Delivered,Standard,False
+ORD10082,Cheryl Ortega,0766702160,WH07,Matara,Kalutara,ITM0079,Washing Machine,CR005,2026-07-30,Delivered,Fragile,False
+ORD10083,Stephanie Gilbert,0799214801,WH08,Anuradhapura,Batticaloa,ITM0087,Gas Cooker (4-burner),CR009,2026-07-23,Delivered,Fragile,False
+ORD10084,Roy Torres,0787328534,WH08,Anuradhapura,Galle,ITM0094,Bicycle,CR015,2026-07-14,Delivered,Standard,False
+ORD10085,Kevin Pena,0737425184,WH04,Kurunegala,Kalutara,ITM0048,Office Chair,CR011,2026-08-08,Damaged,Standard,False
+ORD10086,Michael Dixon,0777395997,WH03,Galle,Gampaha,ITM0024,Bicycle,CR025,2026-09-09,Delivered,Standard,False
+ORD10087,Rebecca Jackson,0771621086,WH04,Kurunegala,Ratnapura,ITM0043,Book Carton (mixed),CR026,2026-07-02,Delayed,Standard,False
+ORD10088,Matthew Harvey,0719823994,WH02,Kandy,Batticaloa,ITM0017,Gas Cooker (4-burner),CR019,2026-07-03,Delivered,Fragile,False
+ORD10089,Nicole Chambers,0718876745,WH04,Kurunegala,Colombo,ITM0048,Office Chair,CR024,2026-07-15,Delivered,Standard,False
+ORD10090,Brittany Williams,0759952696,WH08,Anuradhapura,Negombo,ITM0087,Gas Cooker (4-burner),CR011,2026-08-09,Delivered,Fragile,False
+ORD10091,Patricia Gibson,0781602286,WH04,Kurunegala,Matara,ITM0043,Book Carton (mixed),CR021,2026-09-18,Delayed,Standard,False
+ORD10092,Cheyenne Horton,0732516313,WH06,Negombo,Kandy,ITM0066,Water Filter,CR008,2026-08-10,Delivered,Standard,False
+ORD10093,Charles Watts,0773791137,WH04,Kurunegala,Kandy,ITM0046,Queen Mattress,CR025,2026-09-18,Delivered,Standard,False
+ORD10094,Patricia Rodriguez,0705921894,WH06,Negombo,Negombo,ITM0073,Queen Mattress,CR029,2026-08-04,Delivered,Standard,False
+ORD10095,Robert Dominguez,0723937176,WH04,Kurunegala,Matara,ITM0040,Gas Cooker (4-burner),CR014,2026-08-08,Damaged,Standard,False
+ORD10096,David Charles,0793401116,WH02,Kandy,Trincomalee,ITM0013,Air Conditioner Unit,CR028,2026-08-07,Delivered,Fragile,False
+ORD10097,John Schmidt,0708805654,WH03,Galle,Anuradhapura,ITM0024,Bicycle,CR021,2026-08-17,Delivered,Standard,False
+ORD10098,Tiffany Vance,0756018975,WH03,Galle,Ratnapura,ITM0033,Office Chair,CR018,2026-08-22,Delivered,Standard,False
+ORD10099,Stephanie Simmons,0714979651,WH06,Negombo,Kurunegala,ITM0068,Mobile Phone (boxed),CR023,2026-09-20,Delayed,Fragile,False
+ORD10100,Stephanie Manning,0741368085,WH04,Kurunegala,Trincomalee,ITM0043,Book Carton (mixed),CR012,2026-08-09,Delivered,Standard,False
+ORD10101,Paul Larsen,0709333700,WH08,Anuradhapura,Ratnapura,ITM0091,Refrigerator 250L,CR013,2026-07-20,Delivered,Fragile,False
+ORD10102,Kelly Sims,0754674286,WH08,Anuradhapura,Kalutara,ITM0091,Refrigerator 250L,CR029,2026-07-20,Delayed,Fragile,False
+ORD10103,Micheal Young,0722630140,WH06,Negombo,Jaffna,ITM0068,Mobile Phone (boxed),CR020,2026-07-26,Delayed,Fragile,False
+ORD10104,Joshua Taylor,0722512187,WH06,Negombo,Ratnapura,ITM0068,Mobile Phone (boxed),CR002,2026-07-16,Delivered,Fragile,False
+ORD10105,Christian Lewis,0743760597,WH03,Galle,Matara,ITM0033,Office Chair,CR024,2026-08-03,Delayed,Standard,False
+ORD10106,Joshua Perry,0752932227,WH03,Galle,Kalutara,ITM0030,Air Conditioner Unit,CR027,2026-07-14,In Transit,Fragile,False
+ORD10107,Jean Carrillo,0767136687,WH04,Kurunegala,Kandy,ITM0048,Office Chair,CR005,2026-08-30,Delayed,Standard,False
+ORD10108,Spencer Johnston,0747392547,WH02,Kandy,Nuwara Eliya,ITM0013,Air Conditioner Unit,CR013,2026-08-09,Damaged,Standard,False
+ORD10109,Guy Molina,0786503032,WH08,Anuradhapura,Ratnapura,ITM0090,Ceramic Dinner Set,CR012,2026-09-14,Damaged,Standard,False
+ORD10110,Sara Medina,0747850067,WH06,Negombo,Jaffna,ITM0066,Water Filter,CR021,2026-09-03,Delivered,Standard,False
+ORD10111,Lindsey Walker,0714939290,WH02,Kandy,Galle,ITM0016,Washing Machine,CR002,2026-07-15,Delivered,Fragile,False
+ORD10112,John Price,0788031780,WH08,Anuradhapura,Batticaloa,ITM0095,"Mirror (large, framed)",CR005,2026-08-27,Delivered,Fragile,False
+ORD10113,Jennifer Martin,0741548888,WH05,Jaffna,Badulla,ITM0062,"Mirror (large, framed)",CR024,2026-08-08,Delayed,Fragile,False
+ORD10114,Veronica Ferguson,0752666893,WH06,Negombo,Matara,ITM0073,Queen Mattress,CR007,2026-09-20,Delivered,Standard,False
+ORD10115,Justin Johnson,0744184459,WH06,Negombo,Matara,ITM0072,Gas Cooker (4-burner),CR018,2026-08-25,Delivered,Fragile,True
+ORD10116,Sean White,0791358318,WH02,Kandy,Gampaha,ITM0016,Washing Machine,CR027,2026-07-19,Delivered,Fragile,False
+ORD10117,Daniel Murphy,0794442778,WH01,Colombo,Nuwara Eliya,ITM0009,Water Filter,CR011,2026-09-05,Delivered,Standard,False
+ORD10118,Diana Bean,0736512314,WH01,Colombo,Gampaha,ITM0010,Air Conditioner Unit,CR025,2026-08-03,Delivered,Fragile,False
+ORD10119,Bradley Smith,0723180906,WH08,Anuradhapura,Galle,ITM0084,Office Chair,CR026,2026-08-15,Damaged,Standard,True
+ORD10120,Trevor Walker,0707010308,WH05,Jaffna,Negombo,ITM0057,Gas Cooker (4-burner),CR026,2026-06-30,Delivered,Fragile,True
+ORD10121,Marissa Webster,0728062546,WH08,Anuradhapura,Nuwara Eliya,ITM0087,Gas Cooker (4-burner),CR008,2026-07-18,Delivered,Fragile,False
+ORD10122,Alex Hernandez,0792829622,WH05,Jaffna,Kandy,ITM0054,Bicycle,CR024,2026-07-06,Delivered,Standard,False
+ORD10123,Brian Gould,0786060517,WH04,Kurunegala,Batticaloa,ITM0047,Air Conditioner Unit,CR008,2026-08-08,Delivered,Fragile,False
+ORD10124,Pamela Jackson,0768151684,WH04,Kurunegala,Ratnapura,ITM0048,Office Chair,CR001,2026-08-21,Delivered,Standard,False
+ORD10125,Michelle Strickland,0753488628,WH06,Negombo,Kandy,ITM0072,Gas Cooker (4-burner),CR016,2026-07-09,Delivered,Fragile,False
+ORD10126,Ashley Johnson,0769901266,WH01,Colombo,Galle,ITM0010,Air Conditioner Unit,CR009,2026-07-24,Delivered,Fragile,False
+ORD10127,Susan Brooks,0714607488,WH03,Galle,Anuradhapura,ITM0033,Office Chair,CR017,2026-09-01,Delivered,Standard,False
+ORD10128,Kevin Rivas,0777689582,WH04,Kurunegala,Anuradhapura,ITM0046,Queen Mattress,CR029,2026-07-17,Delivered,Standard,False
+ORD10129,Raymond Jefferson,0747279729,WH04,Kurunegala,Badulla,ITM0045,Water Filter,CR004,2026-08-21,Delivered,Standard,False
+ORD10130,Rebecca Knight,0712564141,WH02,Kandy,Ratnapura,ITM0018,Sofa Set (3-seater),CR030,2026-06-27,Delivered,Standard,False
+ORD10131,Jeffrey Wood,0796530541,WH04,Kurunegala,Kandy,ITM0046,Queen Mattress,CR024,2026-08-12,Delayed,Standard,False
+ORD10132,Alexandria Fisher,0705825620,WH06,Negombo,Kandy,ITM0070,Air Conditioner Unit,CR014,2026-08-10,Delivered,Fragile,False
+ORD10133,Tyler Reid,0716873938,WH05,Jaffna,Negombo,ITM0064,Washing Machine,CR012,2026-09-12,Damaged,Standard,False
+ORD10134,Christian Thompson,0738199311,WH08,Anuradhapura,Batticaloa,ITM0092,Queen Mattress,CR012,2026-08-13,Delivered,Standard,False
+ORD10135,Debra Morton,0781440466,WH08,Anuradhapura,Batticaloa,ITM0092,Queen Mattress,CR025,2026-08-15,Delayed,Standard,False
+ORD10136,Julie Petersen,0746701311,WH05,Jaffna,Kalutara,ITM0064,Washing Machine,CR022,2026-08-20,Delivered,Fragile,False
+ORD10137,Samuel Rivas,0721514340,WH04,Kurunegala,Colombo,ITM0040,Gas Cooker (4-burner),CR006,2026-07-02,Delivered,Fragile,False
+ORD10138,Jerry Christensen,0756228407,WH02,Kandy,Badulla,ITM0013,Air Conditioner Unit,CR017,2026-08-18,Delivered,Fragile,False
+ORD10139,Jamie Johnson,0703610197,WH07,Matara,Matara,ITM0078,Queen Mattress,CR025,2026-09-14,Lost,Standard,False
+ORD10140,John Kelly,0798416270,WH02,Kandy,Nuwara Eliya,ITM0020,Laptop (boxed),CR020,2026-07-19,Damaged,Standard,False
+ORD10141,Spencer Haynes,0762860421,WH04,Kurunegala,Negombo,ITM0045,Water Filter,CR007,2026-07-20,Delayed,Standard,False
+ORD10142,Kellie Lee,0741761976,WH03,Galle,Ratnapura,ITM0033,Office Chair,CR022,2026-07-17,Delivered,Standard,False
+ORD10143,Katherine Chang,0745856117,WH03,Galle,Kurunegala,ITM0024,Bicycle,CR020,2026-08-30,Damaged,Standard,False
+ORD10144,Michael West,0727378822,WH04,Kurunegala,Kandy,ITM0036,Sofa Set (3-seater),CR001,2026-06-25,Delivered,Standard,False
+ORD10145,Daniel Holt,0717661748,WH05,Jaffna,Badulla,ITM0057,Gas Cooker (4-burner),CR008,2026-07-23,Delayed,Fragile,False
+ORD10146,Jackie Tran,0716252285,WH08,Anuradhapura,Badulla,ITM0094,Bicycle,CR002,2026-07-27,Delivered,Standard,False
+ORD10147,Patrick Rivera,0761349914,WH05,Jaffna,Kurunegala,ITM0060,Air Conditioner Unit,CR019,2026-08-31,Delivered,Fragile,False
+ORD10148,Eric Hall,0752478574,WH04,Kurunegala,Galle,ITM0036,Sofa Set (3-seater),CR026,2026-09-02,Lost,Standard,False
+ORD10149,Bryan Herrera,0782319479,WH04,Kurunegala,Gampaha,ITM0046,Queen Mattress,CR004,2026-09-06,Delivered,Standard,False
+ORD10150,Cheryl Rodgers,0719564488,WH04,Kurunegala,Gampaha,ITM0044,Ceramic Dinner Set,CR010,2026-07-20,Delivered,Fragile,False
+ORD10151,Vanessa Warren,0724963933,WH06,Negombo,Kandy,ITM0068,Mobile Phone (boxed),CR017,2026-07-21,Damaged,Fragile,False
+ORD10152,Dr. Elizabeth Ward,0713972018,WH02,Kandy,Galle,ITM0015,Queen Mattress,CR009,2026-07-23,Delivered,Standard,False
+ORD10153,Joseph Hill,0798531380,WH08,Anuradhapura,Ratnapura,ITM0084,Office Chair,CR016,2026-06-29,Delivered,Standard,False
+ORD10154,Melissa Martinez,0753532644,WH06,Negombo,Kalutara,ITM0072,Gas Cooker (4-burner),CR029,2026-09-16,Delivered,Fragile,False
+ORD10155,Ashley Smith,0706904610,WH04,Kurunegala,Kandy,ITM0047,Air Conditioner Unit,CR016,2026-07-21,Delivered,Fragile,False
+ORD10156,Jeremiah Lopez,0755816353,WH05,Jaffna,Kandy,ITM0052,Sofa Set (3-seater),CR010,2026-06-28,Delivered,Standard,True
+ORD10157,Scott Wilson,0768763013,WH01,Colombo,Ratnapura,ITM0010,Air Conditioner Unit,CR028,2026-06-30,Delivered,Fragile,False
+ORD10158,Benjamin Soto,0794158134,WH05,Jaffna,Batticaloa,ITM0062,"Mirror (large, framed)",CR026,2026-06-29,Delivered,Fragile,False
+ORD10159,Robert Avery,0772736473,WH04,Kurunegala,Trincomalee,ITM0036,Sofa Set (3-seater),CR016,2026-07-02,Delivered,Standard,False
+ORD10160,Bailey Duran DDS,0721656695,WH08,Anuradhapura,Kalutara,ITM0088,Air Conditioner Unit,CR027,2026-09-08,Delayed,Fragile,False
+ORD10161,Patricia James,0793663319,WH03,Galle,Badulla,ITM0025,Book Carton (mixed),CR015,2026-09-20,In Transit,Standard,False
+ORD10162,Scott Branch,0791878547,WH04,Kurunegala,Matara,ITM0042,Refrigerator 250L,CR030,2026-07-23,Delivered,Fragile,False
+ORD10163,Amy Choi,0765767195,WH08,Anuradhapura,Ratnapura,ITM0087,Gas Cooker (4-burner),CR021,2026-07-03,Delivered,Fragile,False
+ORD10164,Christine Clark,0752367376,WH03,Galle,Badulla,ITM0030,Air Conditioner Unit,CR028,2026-08-27,Damaged,Fragile,False
+ORD10165,David Arnold,0763163449,WH05,Jaffna,Ratnapura,ITM0062,"Mirror (large, framed)",CR005,2026-07-09,Delivered,Fragile,False
+ORD10166,Jerry Wheeler,0782567880,WH05,Jaffna,Badulla,ITM0064,Washing Machine,CR003,2026-07-22,Delivered,Fragile,False
+ORD10167,Dwayne Campbell,0744024309,WH06,Negombo,Ratnapura,ITM0069,Book Carton (mixed),CR014,2026-09-15,Delivered,Standard,True
+ORD10168,Michael Bradshaw,0715962567,WH03,Galle,Matara,ITM0023,Washing Machine,CR025,2026-09-08,Delivered,Fragile,False
+ORD10169,Leah Lara,0781633297,WH08,Anuradhapura,Nuwara Eliya,ITM0092,Queen Mattress,CR004,2026-07-13,Delivered,Standard,False
+ORD10170,Joshua Holland,0724034091,WH06,Negombo,Matara,ITM0070,Air Conditioner Unit,CR029,2026-09-20,Delivered,Fragile,False
+ORD10171,Charles Brown,0707893063,WH08,Anuradhapura,Badulla,ITM0091,Refrigerator 250L,CR025,2026-09-08,Damaged,Fragile,False
+ORD10172,Paul Carroll,0736192009,WH04,Kurunegala,Ratnapura,ITM0042,Refrigerator 250L,CR024,2026-07-22,Delayed,Fragile,False
+ORD10173,John Torres,0798391997,WH08,Anuradhapura,Nuwara Eliya,ITM0088,Air Conditioner Unit,CR016,2026-08-02,Delivered,Fragile,False
+ORD10174,Kathryn Snyder,0763718884,WH04,Kurunegala,Nuwara Eliya,ITM0048,Office Chair,CR010,2026-07-01,Delayed,Standard,False
+ORD10175,Stacy Navarro,0777227905,WH08,Anuradhapura,Jaffna,ITM0090,Ceramic Dinner Set,CR026,2026-08-21,Damaged,Fragile,True
+ORD10176,Brandon Hayden,0715782563,WH05,Jaffna,Kalutara,ITM0059,Queen Mattress,CR004,2026-09-13,Delayed,Standard,False
+ORD10177,Laurie Smith,0762538698,WH02,Kandy,Nuwara Eliya,ITM0013,Air Conditioner Unit,CR006,2026-09-06,Damaged,Fragile,False
+ORD10178,Debra Williams,0761893502,WH03,Galle,Gampaha,ITM0024,Bicycle,CR015,2026-09-05,Damaged,Standard,False
+ORD10179,Joseph Ramos,0706346644,WH04,Kurunegala,Batticaloa,ITM0044,Ceramic Dinner Set,CR012,2026-07-21,In Transit,Fragile,False
+ORD10180,Kevin Walters,0748926478,WH02,Kandy,Gampaha,ITM0015,Queen Mattress,CR023,2026-08-10,Delivered,Standard,False
+ORD10181,Julie Ortiz,0791088100,WH06,Negombo,Gampaha,ITM0073,Queen Mattress,CR005,2026-07-25,Delayed,Standard,False
+ORD10182,Shannon Rivera,0799854536,WH02,Kandy,Colombo,ITM0013,Air Conditioner Unit,CR009,2026-08-30,Delivered,Fragile,False
+ORD10183,Matthew Morales DDS,0705000351,WH04,Kurunegala,Kandy,ITM0046,Queen Mattress,CR025,2026-06-27,Delivered,Standard,False
+ORD10184,Ernest Morris,0779993490,WH04,Kurunegala,Ratnapura,ITM0045,Water Filter,CR026,2026-09-07,Delivered,Standard,True
+ORD10185,Jose Travis,0748201433,WH01,Colombo,Ratnapura,ITM0003,Bicycle,CR017,2026-08-26,Delivered,Standard,False
+ORD10186,Julia Brown,0719782613,WH01,Colombo,Trincomalee,ITM0002,Book Carton (mixed),CR012,2026-08-13,Delivered,Standard,False
+ORD10187,Peter Garrett,0707550726,WH04,Kurunegala,Kandy,ITM0042,Refrigerator 250L,CR017,2026-09-05,Delayed,Fragile,False
+ORD10188,Derek Anderson,0741272499,WH08,Anuradhapura,Anuradhapura,ITM0094,Bicycle,CR002,2026-07-21,Delivered,Standard,False
+ORD10189,Michael Martinez,0753238241,WH04,Kurunegala,Nuwara Eliya,ITM0040,Gas Cooker (4-burner),CR003,2026-08-24,Delayed,Fragile,False
+ORD10190,Cynthia Moore,0779028420,WH01,Colombo,Matara,ITM0005,Laptop (boxed),CR018,2026-08-16,Delivered,Fragile,False
+ORD10191,Jason Walker,0731734947,WH06,Negombo,Galle,ITM0068,Mobile Phone (boxed),CR026,2026-09-13,Delayed,Standard,True
+ORD10192,Julia Wilson,0788942330,WH08,Anuradhapura,Jaffna,ITM0087,Gas Cooker (4-burner),CR029,2026-09-12,Damaged,Standard,False
+ORD10193,Timothy Carter,0706568772,WH03,Galle,Colombo,ITM0030,Air Conditioner Unit,CR025,2026-08-31,Delivered,Fragile,False
+ORD10194,Ruben Baird,0777486822,WH03,Galle,Kandy,ITM0031,Water Filter,CR026,2026-07-17,Delivered,Standard,False
+ORD10195,Charles Lee,0785474830,WH04,Kurunegala,Galle,ITM0037,Bicycle,CR016,2026-08-21,Delivered,Standard,False
+ORD10196,Sherry Shields,0746389033,WH08,Anuradhapura,Kandy,ITM0088,Air Conditioner Unit,CR024,2026-07-20,Delivered,Fragile,False
+ORD10197,Sarah Morgan,0798149041,WH02,Kandy,Kandy,ITM0015,Queen Mattress,CR011,2026-09-08,Delivered,Standard,False
+ORD10198,Samantha Campbell,0758297090,WH02,Kandy,Badulla,ITM0020,Laptop (boxed),CR015,2026-07-22,Delivered,Fragile,False
+ORD10199,Lauren Keller,0767095349,WH03,Galle,Ratnapura,ITM0031,Water Filter,CR026,2026-09-16,Lost,Standard,True
+ORD10200,Joshua Reed,0798351320,WH05,Jaffna,Nuwara Eliya,ITM0052,Sofa Set (3-seater),CR024,2026-08-16,Delivered,Standard,False
+ORD10201,Jamie Cantu,0703574265,WH01,Colombo,Galle,ITM0005,Laptop (boxed),CR003,2026-09-16,Delivered,Fragile,False
+ORD10202,Michael Armstrong,0787156398,WH06,Negombo,Anuradhapura,ITM0072,Gas Cooker (4-burner),CR012,2026-07-16,Delayed,Fragile,False
+ORD10203,Jennifer Flores,0729372568,WH04,Kurunegala,Matara,ITM0044,Ceramic Dinner Set,CR021,2026-08-08,In Transit,Fragile,True
+ORD10204,Roberta Hughes,0748487220,WH05,Jaffna,Kurunegala,ITM0054,Bicycle,CR030,2026-08-27,Delivered,Standard,False
+ORD10205,Marissa Hernandez,0722242387,WH03,Galle,Trincomalee,ITM0023,Washing Machine,CR010,2026-06-27,In Transit,Fragile,False
+ORD10206,Vincent Rivera,0756828829,WH04,Kurunegala,Galle,ITM0047,Air Conditioner Unit,CR029,2026-07-03,In Transit,Fragile,False
+ORD10207,Jessica Fox,0723920762,WH07,Matara,Kandy,ITM0076,Office Chair,CR018,2026-08-07,Delivered,Standard,False
+ORD10208,Charles Pitts,0739288312,WH08,Anuradhapura,Matara,ITM0087,Gas Cooker (4-burner),CR017,2026-07-08,In Transit,Fragile,False
+ORD10209,Richard Baker,0783177199,WH01,Colombo,Matara,ITM0003,Bicycle,CR018,2026-08-23,Delivered,Standard,False
+ORD10210,Marie Christian,0779819709,WH06,Negombo,Kalutara,ITM0066,Water Filter,CR003,2026-09-14,Delivered,Standard,False
+ORD10211,Kimberly Finley,0752244282,WH04,Kurunegala,Nuwara Eliya,ITM0045,Water Filter,CR014,2026-08-23,Delayed,Standard,True
+ORD10212,Olivia Brennan,0784052834,WH04,Kurunegala,Anuradhapura,ITM0047,Air Conditioner Unit,CR022,2026-06-27,Delivered,Fragile,False
+ORD10213,Cynthia Cohen,0719692311,WH08,Anuradhapura,Galle,ITM0084,Office Chair,CR014,2026-07-21,Delivered,Standard,False
+ORD10214,Nicole Hamilton MD,0736805303,WH02,Kandy,Negombo,ITM0018,Sofa Set (3-seater),CR006,2026-08-24,Delivered,Standard,False
+ORD10215,Ashlee Jackson,0785604524,WH05,Jaffna,Kalutara,ITM0054,Bicycle,CR010,2026-07-23,Delayed,Standard,False
+ORD10216,Amber Flynn,0793586950,WH02,Kandy,Ratnapura,ITM0017,Gas Cooker (4-burner),CR010,2026-07-22,Delivered,Fragile,False
+ORD10217,Jeffrey Sanchez,0702362693,WH02,Kandy,Ratnapura,ITM0020,Laptop (boxed),CR020,2026-08-03,Delivered,Fragile,False
+ORD10218,Rebecca Jackson,0761508113,WH01,Colombo,Ratnapura,ITM0005,Laptop (boxed),CR025,2026-07-01,Delivered,Fragile,False
+ORD10219,Janet Vega,0737813102,WH04,Kurunegala,Kalutara,ITM0050,Mobile Phone (boxed),CR021,2026-08-11,Delivered,Fragile,False
+ORD10220,Briana Murray,0753410360,WH03,Galle,Anuradhapura,ITM0035,"Mirror (large, framed)",CR003,2026-07-18,Delivered,Fragile,False
+ORD10221,Michael Nolan,0763193891,WH04,Kurunegala,Gampaha,ITM0036,Sofa Set (3-seater),CR023,2026-08-08,Delivered,Standard,False
+ORD10222,Megan Moore,0748542969,WH07,Matara,Matara,ITM0081,Ceramic Dinner Set,CR017,2026-08-05,Delivered,Fragile,False
+ORD10223,Victoria Evans,0798015136,WH03,Galle,Galle,ITM0025,Book Carton (mixed),CR004,2026-08-04,Delivered,Standard,False
+ORD10224,Joyce Turner,0796246485,WH03,Galle,Gampaha,ITM0025,Book Carton (mixed),CR029,2026-07-31,Delivered,Standard,False
+ORD10225,Ashley James,0776176450,WH03,Galle,Nuwara Eliya,ITM0022,Sofa Set (3-seater),CR006,2026-07-28,Delivered,Standard,False
+ORD10226,Wendy Phillips,0751816348,WH04,Kurunegala,Colombo,ITM0050,Mobile Phone (boxed),CR003,2026-09-12,Delivered,Fragile,False
+ORD10227,Denise Knight,0775794062,WH01,Colombo,Negombo,ITM0009,Water Filter,CR016,2026-08-29,Delivered,Standard,False
+ORD10228,Valerie Lozano,0767139410,WH05,Jaffna,Colombo,ITM0057,Gas Cooker (4-burner),CR028,2026-09-04,Damaged,Standard,False
+ORD10229,Tanner Mitchell DDS,0717481857,WH01,Colombo,Kurunegala,ITM0005,Laptop (boxed),CR002,2026-08-21,Delivered,Fragile,False
+ORD10230,Colleen Lee,0792993318,WH05,Jaffna,Anuradhapura,ITM0052,Sofa Set (3-seater),CR025,2026-07-18,Delivered,Standard,False
+ORD10231,Michelle Hopkins,0753420404,WH02,Kandy,Kandy,ITM0017,Gas Cooker (4-burner),CR013,2026-09-13,In Transit,Fragile,False
+ORD10232,Brent Burton,0703299088,WH03,Galle,Trincomalee,ITM0022,Sofa Set (3-seater),CR017,2026-06-27,Delivered,Standard,True
+ORD10233,Jeremiah Riley,0799648751,WH07,Matara,Matara,ITM0076,Office Chair,CR026,2026-09-03,Delivered,Standard,False
+ORD10234,Theodore Murphy,0746643410,WH02,Kandy,Matara,ITM0017,Gas Cooker (4-burner),CR030,2026-08-03,Delivered,Fragile,False
+ORD10235,Carlos Ryan,0748967375,WH05,Jaffna,Gampaha,ITM0052,Sofa Set (3-seater),CR017,2026-07-29,Delivered,Standard,False
+ORD10236,Susan Rivas,0741447065,WH08,Anuradhapura,Colombo,ITM0090,Ceramic Dinner Set,CR012,2026-07-18,Delivered,Fragile,False
+ORD10237,Terry Coffey,0794817541,WH05,Jaffna,Anuradhapura,ITM0064,Washing Machine,CR009,2026-07-22,Delayed,Fragile,False
+ORD10238,Gina Wilson,0797378535,WH07,Matara,Colombo,ITM0078,Queen Mattress,CR019,2026-07-01,Delivered,Standard,False
+ORD10239,Vincent Dalton,0714200829,WH02,Kandy,Gampaha,ITM0018,Sofa Set (3-seater),CR022,2026-09-02,Delivered,Standard,False
+ORD10240,Jennifer Singleton,0737884990,WH01,Colombo,Anuradhapura,ITM0003,Bicycle,CR011,2026-08-17,Delivered,Standard,False
+ORD10241,Richard Smith,0703316639,WH05,Jaffna,Nuwara Eliya,ITM0052,Sofa Set (3-seater),CR020,2026-08-15,Damaged,Standard,False
+ORD10242,Jacob Curry,0787322070,WH05,Jaffna,Jaffna,ITM0054,Bicycle,CR018,2026-07-19,Delivered,Standard,False
+ORD10243,Samantha Bentley,0755435261,WH04,Kurunegala,Galle,ITM0036,Sofa Set (3-seater),CR015,2026-07-04,Damaged,Standard,False
+ORD10244,Kaitlyn Harvey,0744772642,WH06,Negombo,Anuradhapura,ITM0066,Water Filter,CR007,2026-08-17,Lost,Standard,False
+ORD10245,Leonard Holland,0776851946,WH03,Galle,Nuwara Eliya,ITM0035,"Mirror (large, framed)",CR010,2026-08-24,Delivered,Fragile,False
+ORD10246,Susan Turner,0717370211,WH05,Jaffna,Kalutara,ITM0059,Queen Mattress,CR030,2026-08-02,Delayed,Standard,False
+ORD10247,Andrew Johnson,0742325893,WH04,Kurunegala,Gampaha,ITM0044,Ceramic Dinner Set,CR012,2026-08-10,Delayed,Fragile,False
+ORD10248,David Medina,0785548852,WH04,Kurunegala,Kalutara,ITM0040,Gas Cooker (4-burner),CR015,2026-07-31,Delayed,Fragile,False
+ORD10249,Michael Paul,0795014486,WH05,Jaffna,Badulla,ITM0059,Queen Mattress,CR009,2026-08-15,Delivered,Standard,False
+ORD10250,Patrick Moore,0731880654,WH03,Galle,Colombo,ITM0025,Book Carton (mixed),CR022,2026-08-03,Damaged,Standard,False
+ORD10251,Sandra Gilbert,0721086930,WH02,Kandy,Kurunegala,ITM0015,Queen Mattress,CR011,2026-07-21,Delayed,Standard,False
+ORD10252,Jacob Ramos,0779010256,WH05,Jaffna,Kalutara,ITM0059,Queen Mattress,CR006,2026-07-16,Delivered,Standard,False
+ORD10253,Ariana Jennings,0702500901,WH06,Negombo,Jaffna,ITM0069,Book Carton (mixed),CR025,2026-08-15,In Transit,Standard,False
+ORD10254,Maria Brown,0703937099,WH06,Negombo,Trincomalee,ITM0069,Book Carton (mixed),CR008,2026-07-20,Delivered,Standard,False
+ORD10255,Bryan Charles,0769311162,WH04,Kurunegala,Kalutara,ITM0045,Water Filter,CR027,2026-08-07,Delivered,Standard,False
+ORD10256,Daniel Fowler,0792800206,WH02,Kandy,Kalutara,ITM0021,Ceramic Dinner Set,CR024,2026-06-26,Damaged,Fragile,True
+ORD10257,Gavin Zhang,0773251501,WH04,Kurunegala,Negombo,ITM0037,Bicycle,CR015,2026-09-08,In Transit,Standard,False
+ORD10258,Andrea Hubbard,0753726201,WH08,Anuradhapura,Batticaloa,ITM0092,Queen Mattress,CR015,2026-07-14,Delivered,Standard,False
+ORD10259,Robin Hall,0755949685,WH07,Matara,Anuradhapura,ITM0078,Queen Mattress,CR021,2026-09-07,Delivered,Standard,False
+ORD10260,Steven Smith,0768175669,WH05,Jaffna,Ratnapura,ITM0060,Air Conditioner Unit,CR025,2026-09-15,Delivered,Fragile,False
+ORD10261,Dr. Kimberly Lindsey,0731114590,WH05,Jaffna,Matara,ITM0052,Sofa Set (3-seater),CR003,2026-07-04,Damaged,Standard,False
+ORD10262,Allison Smith,0791191859,WH03,Galle,Kurunegala,ITM0030,Air Conditioner Unit,CR008,2026-09-08,Delivered,Fragile,False
+ORD10263,Leah Smith,0743679603,WH03,Galle,Ratnapura,ITM0030,Air Conditioner Unit,CR012,2026-07-19,Delivered,Fragile,False
+ORD10264,Patrick Fox,0715949909,WH04,Kurunegala,Ratnapura,ITM0044,Ceramic Dinner Set,CR017,2026-09-04,Damaged,Fragile,False
+ORD10265,Jerome Cox,0797268384,WH04,Kurunegala,Trincomalee,ITM0042,Refrigerator 250L,CR008,2026-08-20,Delivered,Fragile,False
+ORD10266,Jonathan Dougherty,0735151780,WH04,Kurunegala,Badulla,ITM0045,Water Filter,CR018,2026-06-28,Damaged,Standard,False
+ORD10267,Susan Hopkins,0712882551,WH06,Negombo,Nuwara Eliya,ITM0072,Gas Cooker (4-burner),CR020,2026-07-23,Delivered,Fragile,False
+ORD10268,Victor Brown,0783514105,WH01,Colombo,Gampaha,ITM0009,Water Filter,CR018,2026-08-09,Damaged,Standard,False
+ORD10269,Jessica Rodriguez,0799201172,WH02,Kandy,Matara,ITM0020,Laptop (boxed),CR028,2026-09-01,Delivered,Fragile,False
+ORD10270,Angel Miller,0768663806,WH02,Kandy,Kalutara,ITM0013,Air Conditioner Unit,CR017,2026-08-22,Delivered,Fragile,False
+ORD10271,Cameron Weber,0765269083,WH05,Jaffna,Colombo,ITM0060,Air Conditioner Unit,CR018,2026-08-19,Delayed,Fragile,False
+ORD10272,Erika Vang,0782010921,WH08,Anuradhapura,Colombo,ITM0090,Ceramic Dinner Set,CR024,2026-08-14,Delivered,Fragile,False
+ORD10273,Jonathan Jordan,0767282411,WH01,Colombo,Kalutara,ITM0010,Air Conditioner Unit,CR016,2026-09-09,Delivered,Standard,False
+ORD10274,Sarah Curtis,0713231198,WH04,Kurunegala,Anuradhapura,ITM0043,Book Carton (mixed),CR028,2026-09-06,Damaged,Standard,False
+ORD10275,Sharon Jordan,0769872505,WH06,Negombo,Gampaha,ITM0069,Book Carton (mixed),CR012,2026-09-18,Delivered,Standard,False
+ORD10276,Gerald Chavez,0778115687,WH02,Kandy,Badulla,ITM0017,Gas Cooker (4-burner),CR008,2026-08-03,Delayed,Fragile,False
+ORD10277,Emily Edwards,0732893218,WH05,Jaffna,Kurunegala,ITM0057,Gas Cooker (4-burner),CR027,2026-07-18,Delivered,Fragile,False
+ORD10278,Christian Leblanc,0705037710,WH01,Colombo,Nuwara Eliya,ITM0005,Laptop (boxed),CR022,2026-06-30,Delayed,Fragile,False
+ORD10279,Bradley Reynolds,0705105957,WH03,Galle,Kandy,ITM0023,Washing Machine,CR004,2026-09-04,Delivered,Fragile,False
+ORD10280,Robin Hawkins,0703351084,WH07,Matara,Colombo,ITM0079,Washing Machine,CR013,2026-08-19,Delivered,Fragile,False
+ORD10281,Kristina Santiago,0756379867,WH05,Jaffna,Negombo,ITM0052,Sofa Set (3-seater),CR008,2026-08-02,Delayed,Standard,False
+ORD10282,Maurice Christensen,0737938388,WH03,Galle,Negombo,ITM0025,Book Carton (mixed),CR029,2026-09-16,Delivered,Standard,False
+ORD10283,Amber Roberts,0728167236,WH03,Galle,Negombo,ITM0035,"Mirror (large, framed)",CR002,2026-07-24,Delivered,Fragile,False
+ORD10284,Kenneth Lewis,0769799030,WH05,Jaffna,Anuradhapura,ITM0059,Queen Mattress,CR002,2026-08-26,In Transit,Standard,False
+ORD10285,Dr. Gregory Hawkins,0728944327,WH04,Kurunegala,Badulla,ITM0036,Sofa Set (3-seater),CR014,2026-07-05,Delivered,Standard,False
+ORD10286,Laura Aguirre,0771966769,WH03,Galle,Gampaha,ITM0025,Book Carton (mixed),CR008,2026-09-14,Delivered,Standard,False
+ORD10287,Patricia Howell,0735278117,WH05,Jaffna,Kurunegala,ITM0059,Queen Mattress,CR014,2026-08-28,Delivered,Standard,False
+ORD10288,Allison Hickman,0731864641,WH03,Galle,Matara,ITM0023,Washing Machine,CR021,2026-09-12,Damaged,Standard,False
+ORD10289,Alyssa Nelson,0714156856,WH03,Galle,Kurunegala,ITM0031,Water Filter,CR022,2026-09-06,Delivered,Standard,True
+ORD10290,Gerald Smith,0756086650,WH08,Anuradhapura,Nuwara Eliya,ITM0088,Air Conditioner Unit,CR019,2026-09-16,Delivered,Fragile,False
+ORD10291,Matthew Jones,0775070038,WH01,Colombo,Jaffna,ITM0002,Book Carton (mixed),CR030,2026-09-03,Delivered,Standard,False
+ORD10292,Amanda Reese,0747386444,WH06,Negombo,Trincomalee,ITM0073,Queen Mattress,CR023,2026-07-14,Delivered,Standard,False
+ORD10293,Jesse Moore,0789342928,WH04,Kurunegala,Batticaloa,ITM0048,Office Chair,CR021,2026-07-24,Delivered,Standard,False
+ORD10294,Paula Bradley,0754407913,WH04,Kurunegala,Kandy,ITM0048,Office Chair,CR026,2026-07-02,In Transit,Standard,False
+ORD10295,Brittney Webster,0788005797,WH04,Kurunegala,Matara,ITM0042,Refrigerator 250L,CR014,2026-06-28,Damaged,Standard,True
+ORD10296,Denise Stanley,0739376888,WH03,Galle,Galle,ITM0033,Office Chair,CR007,2026-08-10,Delivered,Standard,False
+ORD10297,Jennifer Lewis,0779230828,WH05,Jaffna,Ratnapura,ITM0059,Queen Mattress,CR022,2026-08-12,Delivered,Standard,False
+ORD10298,Jeffrey Campbell,0781985360,WH04,Kurunegala,Galle,ITM0048,Office Chair,CR024,2026-08-28,Delayed,Standard,False
+ORD10299,Kelsey Parker,0701107102,WH05,Jaffna,Colombo,ITM0054,Bicycle,CR027,2026-07-15,Delayed,Standard,False
+ORD10300,Kyle Smith,0721153368,WH04,Kurunegala,Galle,ITM0045,Water Filter,CR027,2026-07-23,Delivered,Standard,True

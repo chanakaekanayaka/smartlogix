@@ -1,0 +1,11 @@
+.env
+venv/
+__pycache__/
+*.pyc
+logs/*.log
+logs/*.jsonl
+logs/*.out
+data/chroma_db/
+data/users.json
+data/case_history.jsonl
+.nicegui/
