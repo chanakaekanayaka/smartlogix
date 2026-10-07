@@ -1,0 +1,42 @@
+{"id": "I01", "text": "My order ORD10017 arrived damaged, the plates were broken", "issue_type": "damaged", "order_id": "ORD10017"}
+{"id": "I02", "text": "The TV screen was cracked when ORD10045 was delivered yesterday", "issue_type": "damaged", "order_id": "ORD10045"}
+{"id": "I03", "text": "ord10120 came with a dented fridge door, very disappointed", "issue_type": "damaged", "order_id": "ORD10120"}
+{"id": "I04", "text": "Received my laptop today (order ORD10233) but the box was crushed and it won't turn on", "issue_type": "damaged", "order_id": "ORD10233"}
+{"id": "I05", "text": "The mirror I ordered is shattered. Order number ORD10088.", "issue_type": "damaged", "order_id": "ORD10088"}
+{"id": "I06", "text": "My dinner set arrived with three broken plates", "issue_type": "damaged", "order_id": null}
+{"id": "I07", "text": "Washing machine delivered to Kandy with a big crack on the side, ORD10150", "issue_type": "damaged", "order_id": "ORD10150"}
+{"id": "I08", "text": "ORD-10201 the gas cooker knobs are broken off", "issue_type": "damaged", "order_id": "ORD10201"}
+{"id": "I09", "text": "My delivery ORD10008 is very late, when will it arrive?", "issue_type": "late", "order_id": "ORD10008"}
+{"id": "I10", "text": "It's been 5 days and ORD10032 still hasn't reached Jaffna", "issue_type": "late", "order_id": "ORD10032"}
+{"id": "I11", "text": "Order ORD10099 was supposed to come on Monday, still waiting", "issue_type": "late", "order_id": "ORD10099"}
+{"id": "I12", "text": "Why is my parcel delayed? ORD10140", "issue_type": "late", "order_id": "ORD10140"}
+{"id": "I13", "text": "The sofa set from Colombo to Galle is a week overdue, order ORD10077", "issue_type": "late", "order_id": "ORD10077"}
+{"id": "I14", "text": "still no delivery for my order, it's 3 days past the promised date", "issue_type": "late", "order_id": null}
+{"id": "I15", "text": "ORD10210 delivery date passed long ago. what is happening??", "issue_type": "late", "order_id": "ORD10210"}
+{"id": "I16", "text": "My bicycle order ORD10055 is stuck, delivery is running late", "issue_type": "late", "order_id": "ORD10055"}
+{"id": "I17", "text": "My package ORD10007 has completely disappeared, the courier cannot locate it", "issue_type": "lost", "order_id": "ORD10007"}
+{"id": "I18", "text": "Courier says ORD10061 was delivered but I never received anything and nobody can find it", "issue_type": "lost", "order_id": "ORD10061"}
+{"id": "I19", "text": "My package ORD10119 has disappeared, tracking shows nothing for a week", "issue_type": "lost", "order_id": "ORD10119"}
+{"id": "I20", "text": "The courier lost my phone order ORD10175", "issue_type": "lost", "order_id": "ORD10175"}
+{"id": "I21", "text": "Where is my parcel? I think it has been lost", "issue_type": "lost", "order_id": null}
+{"id": "I22", "text": "ORD10260 went missing in transit between Kurunegala and Anuradhapura", "issue_type": "lost", "order_id": "ORD10260"}
+{"id": "I23", "text": "My order ORD10019 was delivered to my neighbour's house instead of mine", "issue_type": "wrong_address", "order_id": "ORD10019"}
+{"id": "I24", "text": "ORD10091 was dropped at the wrong address in Negombo", "issue_type": "wrong_address", "order_id": "ORD10091"}
+{"id": "I25", "text": "The courier delivered ORD10133 to a different street", "issue_type": "wrong_address", "order_id": "ORD10133"}
+{"id": "I26", "text": "Package went to the wrong house, order ORD10188", "issue_type": "wrong_address", "order_id": "ORD10188"}
+{"id": "I27", "text": "My mattress was delivered to someone else's address", "issue_type": "wrong_address", "order_id": null}
+{"id": "I28", "text": "What is your refund policy?", "issue_type": "policy_question", "order_id": null}
+{"id": "I29", "text": "How many working days does delivery from Colombo to Jaffna normally take?", "issue_type": "policy_question", "order_id": null}
+{"id": "I30", "text": "Can I ship a gas cylinder with SmartLogix?", "issue_type": "policy_question", "order_id": null}
+{"id": "I31", "text": "Is my personal data shared with couriers?", "issue_type": "policy_question", "order_id": null}
+{"id": "I32", "text": "How many days do I have to report a damaged item?", "issue_type": "policy_question", "order_id": null}
+{"id": "I33", "text": "Can I change my delivery address after the order leaves the warehouse?", "issue_type": "policy_question", "order_id": null}
+{"id": "I34", "text": "What happens if I'm not home when the courier comes?", "issue_type": "policy_question", "order_id": null}
+{"id": "I35", "text": "How much would it cost to send a 20kg refrigerator from Colombo to Kandy?", "issue_type": "new_quote", "order_id": null}
+{"id": "I36", "text": "I want to ship a laptop from Galle to Jaffna, can I get a price?", "issue_type": "new_quote", "order_id": null}
+{"id": "I37", "text": "Quote for sending a sofa set from Kurunegala to Matara please", "issue_type": "new_quote", "order_id": null}
+{"id": "I38", "text": "What's the delivery charge for a 5kg box from Negombo to Badulla?", "issue_type": "new_quote", "order_id": null}
+{"id": "I39", "text": "Hi there", "issue_type": "other", "order_id": null}
+{"id": "I40", "text": "Thank you for your help!", "issue_type": "other", "order_id": null}
+{"id": "I41", "text": "Can I speak to a manager?", "issue_type": "other", "order_id": null}
+{"id": "I42", "text": "I want to say your courier was very polite and helpful", "issue_type": "other", "order_id": null}

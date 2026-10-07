@@ -57,12 +57,18 @@ and recommend contacting human support. Cite which policy the answer comes
 from by name. Keep the answer under 100 words."""
 
 
-def retrieve_and_answer(query: str, k: int = 3) -> dict:
-    collection = get_collection()
-    results = collection.query(query_texts=[query], n_results=k)
-
+def retrieve(query: str, k: int = 3) -> tuple[list[str], list[str]]:
+    """Pure vector search, no LLM - returns (chunks, sources) in rank order.
+    Kept separate from retrieve_and_answer() so retrieval quality can be
+    evaluated on its own (see evaluation/run_evaluation.py)."""
+    results = get_collection().query(query_texts=[query], n_results=k)
     chunks = results["documents"][0] if results["documents"] else []
     sources = [m["source"] for m in results["metadatas"][0]] if results["metadatas"] else []
+    return chunks, sources
+
+
+def retrieve_and_answer(query: str, k: int = 3) -> dict:
+    chunks, sources = retrieve(query, k)
 
     if not chunks:
         return {"answer": "No relevant policy found.", "sources": [], "chunks": []}

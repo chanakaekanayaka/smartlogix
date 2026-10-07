@@ -10,6 +10,8 @@ Responsibilities (Agent 1 of 4):
    sentiment, a one-line summary).
 """
 
+import re
+
 import spacy
 
 from src.llm import call_llm_json
@@ -18,6 +20,20 @@ from src.utils.logger import log_agent_event
 from src.agents.schemas import IntakeOutput
 
 _nlp = spacy.load("en_core_web_sm")
+
+_ISSUE_TYPES = {"damaged", "late", "lost", "wrong_address", "policy_question", "new_quote", "other"}
+_ORDER_ID_RE =re.compile(r"\bORD\s?-?\d{5}\b", re.IGNORECASE)
+
+
+def _resolve_order_id(llm_order_id: str | None, text: str) -> str | None:
+    """Only trust an order ID that literally appears in the message (blocks
+    hallucinated IDs) and normalise it to the 'ORD10017' form used in
+    orders.csv, so 'ord10017' or 'ORD-10017' still match."""
+    found = [re.sub(r"[\s-]", "", m).upper() for m in _ORDER_ID_RE.findall(text)]
+    if not found:
+        return None
+    candidate = re.sub(r"[\s-]", "", llm_order_id or "").upper()
+    return candidate if candidate in found else found[0]
 
 SYSTEM_PROMPT = """You are the Intake Agent of a Sri Lankan logistics assistant.
 Extract structured facts from the customer's message and return ONLY a JSON
@@ -60,16 +76,22 @@ def run_intake_agent(raw_text: str, session_id: str) -> IntakeOutput:
     )
 
     if extracted.get("parse_error"):
-        return IntakeOutput(status="ok", issue_type="other", summary=clean_text[:150])
+        return IntakeOutput(status="ok", order_id=_resolve_order_id(None, clean_text),
+                            issue_type="other", summary=clean_text[:150])
+
+    def _choice(key: str, allowed: set[str], default: str) -> str:
+        # An out-of-vocabulary LLM value would otherwise fail schema validation.
+        value = extracted.get(key)
+        return value if value in allowed else default
 
     return IntakeOutput(
         status="ok",
-        order_id=extracted.get("order_id"),
-        issue_type=extracted.get("issue_type", "other"),
+        order_id=_resolve_order_id(extracted.get("order_id"), clean_text),
+        issue_type=_choice("issue_type", _ISSUE_TYPES, "other"),
         origin_city=extracted.get("origin_city"),
         destination_city=extracted.get("destination_city"),
         item=extracted.get("item"),
-        urgency=extracted.get("urgency", "medium"),
-        sentiment=extracted.get("sentiment", "neutral"),
+        urgency=_choice("urgency", {"low", "medium", "high"}, "medium"),
+        sentiment=_choice("sentiment", {"negative", "neutral", "positive"}, "neutral"),
         summary=extracted.get("summary"),
     )

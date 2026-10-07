@@ -1,0 +1,27 @@
+{"id": "R01", "query": "When do I get a full refund?", "relevant": ["01_refund_policy.md"]}
+{"id": "R02", "query": "Do I get money back if my delivery is more than two days late?", "relevant": ["01_refund_policy.md", "03_delivery_sla.md"]}
+{"id": "R03", "query": "How long does it take to process a refund?", "relevant": ["01_refund_policy.md"]}
+{"id": "R04", "query": "Will I be refunded if a storm delayed my parcel?", "relevant": ["01_refund_policy.md", "03_delivery_sla.md"]}
+{"id": "R05", "query": "Is there a refund if I gave an incorrect delivery address?", "relevant": ["01_refund_policy.md"]}
+{"id": "R06", "query": "Refund for minor cosmetic damage", "relevant": ["01_refund_policy.md"]}
+{"id": "R07", "query": "How do I report a damaged item?", "relevant": ["02_damage_claims_policy.md"]}
+{"id": "R08", "query": "How is fault decided for a damaged parcel?", "relevant": ["02_damage_claims_policy.md"]}
+{"id": "R09", "query": "What compensation do I get if my fragile item was not packed as fragile?", "relevant": ["02_damage_claims_policy.md"]}
+{"id": "R10", "query": "Which items must be packed in fragile packaging?", "relevant": ["02_damage_claims_policy.md", "04_prohibited_items.md"]}
+{"id": "R11", "query": "What happens while my damage claim is still being investigated?", "relevant": ["02_damage_claims_policy.md"]}
+{"id": "R12", "query": "How long does delivery from Colombo to Kandy take?", "relevant": ["03_delivery_sla.md"]}
+{"id": "R13", "query": "What counts as a major delay?", "relevant": ["03_delivery_sla.md"]}
+{"id": "R14", "query": "What are the possible tracking status values?", "relevant": ["03_delivery_sla.md"]}
+{"id": "R15", "query": "Are delays caused by flooding covered by the SLA?", "relevant": ["03_delivery_sla.md"]}
+{"id": "R16", "query": "Delivery time to remote areas", "relevant": ["03_delivery_sla.md"]}
+{"id": "R17", "query": "Can I send a gas cylinder?", "relevant": ["04_prohibited_items.md"]}
+{"id": "R18", "query": "Is it allowed to ship live animals?", "relevant": ["04_prohibited_items.md"]}
+{"id": "R19", "query": "Can I ship a large power bank with a lithium battery?", "relevant": ["04_prohibited_items.md"]}
+{"id": "R20", "query": "Can I ship expensive jewellery?", "relevant": ["04_prohibited_items.md"]}
+{"id": "R21", "query": "What happens if I misdeclare the item type?", "relevant": ["04_prohibited_items.md"]}
+{"id": "R22", "query": "How do I track my order?", "relevant": ["05_faq.md", "03_delivery_sla.md"]}
+{"id": "R23", "query": "Can I change my delivery address?", "relevant": ["05_faq.md"]}
+{"id": "R24", "query": "What if I'm not home for the delivery?", "relevant": ["05_faq.md"]}
+{"id": "R25", "query": "Do you share my personal data with anyone?", "relevant": ["05_faq.md"]}
+{"id": "R26", "query": "Can I delete my account data?", "relevant": ["05_faq.md"]}
+{"id": "R27", "query": "How accurate is the delivery cost estimate?", "relevant": ["05_faq.md"]}

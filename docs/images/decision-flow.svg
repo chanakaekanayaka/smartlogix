@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1090" width="1000" height="1090" role="img" aria-label="Decision flow: how the coordinator routes a message and where the safety checks sit">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="1090" rx="20" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <g font-family="Segoe UI, -apple-system, Helvetica Neue, Arial, sans-serif">
+    <text x="40" y="52" font-size="26" font-weight="800" fill="#0f172a">Decision Flow &amp; Safety Checks</text>
+    <text x="40" y="80" font-size="15" fill="#64748b">How the system decides what to do with each message, and where it refuses to guess</text>
+
+    <!-- main spine -->
+    <g stroke="#64748b" stroke-width="2" marker-end="url(#arrow)">
+      <line x1="300" y1="140" x2="300" y2="170"/>
+      <line x1="300" y1="266" x2="300" y2="300"/>
+      <line x1="300" y1="396" x2="300" y2="430"/>
+      <line x1="300" y1="526" x2="300" y2="560"/>
+      <line x1="300" y1="616" x2="300" y2="650"/>
+      <line x1="300" y1="746" x2="300" y2="780"/>
+      <line x1="300" y1="836" x2="300" y2="870"/>
+      <line x1="300" y1="966" x2="300" y2="1000"/>
+    </g>
+    <g font-size="13" font-weight="700" fill="#64748b">
+      <text x="310" y="290">no</text>
+      <text x="310" y="420">no</text>
+      <text x="310" y="550">yes</text>
+      <text x="310" y="770">yes</text>
+      <text x="310" y="990">yes</text>
+    </g>
+
+    <!-- start -->
+    <rect x="190" y="92" width="220" height="48" rx="24" fill="#2563eb"/>
+    <text x="300" y="122" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Customer message</text>
+
+    <!-- D1 injection -->
+    <path d="M300 170 L420 218 L300 266 L180 218 Z" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="300" y="214" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">Prompt-injection</text>
+    <text x="300" y="232" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">pattern?</text>
+    <line x1="420" y1="218" x2="556" y2="218" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="474" y="208" font-size="13" font-weight="700" fill="#64748b">yes</text>
+    <rect x="560" y="190" width="400" height="56" rx="12" fill="#fef2f2" stroke="#fca5a5"/>
+    <rect x="560" y="190" width="6" height="56" rx="3" fill="#dc2626"/>
+    <text x="582" y="213" font-size="15" font-weight="700" fill="#991b1b">Blocked before it reaches the LLM</text>
+    <text x="582" y="233" font-size="13" fill="#475569">Logged as an attack · polite refusal sent</text>
+
+    <!-- D2 policy question -->
+    <path d="M300 300 L420 348 L300 396 L180 348 Z" fill="#f0fdfa" stroke="#5eead4" stroke-width="1.5"/>
+    <text x="300" y="344" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">Policy</text>
+    <text x="300" y="362" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">question?</text>
+    <line x1="420" y1="348" x2="556" y2="348" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="474" y="338" font-size="13" font-weight="700" fill="#64748b">yes</text>
+    <rect x="560" y="320" width="400" height="56" rx="12" fill="#f0fdfa" stroke="#5eead4"/>
+    <rect x="560" y="320" width="6" height="56" rx="3" fill="#0d9488"/>
+    <text x="582" y="343" font-size="15" font-weight="700" fill="#115e59">Routed to the Help Center</text>
+    <text x="582" y="363" font-size="13" fill="#475569">Policy Agent answers from the documents, with sources</text>
+
+    <!-- D3 order id -->
+    <path d="M300 430 L420 478 L300 526 L180 478 Z" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="300" y="474" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">Order ID in</text>
+    <text x="300" y="492" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">the message?</text>
+    <line x1="420" y1="478" x2="556" y2="478" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="478" y="468" font-size="13" font-weight="700" fill="#64748b">no</text>
+    <rect x="560" y="450" width="400" height="56" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+    <rect x="560" y="450" width="6" height="56" rx="3" fill="#2563eb"/>
+    <text x="582" y="473" font-size="15" font-weight="700" fill="#1e3a8a">Asks the customer for the order ID</text>
+    <text x="582" y="493" font-size="13" fill="#475569">IDs not found in the message are never invented</text>
+
+    <!-- investigation -->
+    <rect x="150" y="560" width="300" height="56" rx="12" fill="#f5f3ff" stroke="#c4b5fd"/>
+    <text x="300" y="584" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">Investigation Agent</text>
+    <text x="300" y="604" font-size="13" fill="#475569" text-anchor="middle">evidence → likely fault + confidence</text>
+
+    <!-- D4 confidence -->
+    <path d="M300 650 L420 698 L300 746 L180 698 Z" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1.5"/>
+    <text x="300" y="694" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">Clear fault and</text>
+    <text x="300" y="712" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">confidence ≥ 0.6?</text>
+    <line x1="420" y1="698" x2="556" y2="698" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="478" y="688" font-size="13" font-weight="700" fill="#64748b">no</text>
+    <rect x="560" y="670" width="400" height="56" rx="12" fill="#f5f3ff" stroke="#c4b5fd"/>
+    <rect x="560" y="670" width="6" height="56" rx="3" fill="#7c3aed"/>
+    <text x="582" y="693" font-size="15" font-weight="700" fill="#5b21b6">Escalated to a human reviewer</text>
+    <text x="582" y="713" font-size="13" fill="#475569">No automatic money decision on uncertain evidence</text>
+
+    <!-- rule table -->
+    <rect x="150" y="780" width="300" height="56" rx="12" fill="#fffbeb" stroke="#fcd34d"/>
+    <text x="300" y="804" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">Rule table decides</text>
+    <text x="300" y="824" font-size="13" fill="#475569" text-anchor="middle">issue type × fault → refund action</text>
+
+    <!-- D5 guard -->
+    <path d="M300 870 L420 918 L300 966 L180 918 Z" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.5"/>
+    <text x="300" y="914" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">LLM reply matches</text>
+    <text x="300" y="932" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">the decision?</text>
+    <line x1="420" y1="918" x2="556" y2="918" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="478" y="908" font-size="13" font-weight="700" fill="#64748b">no</text>
+    <rect x="560" y="890" width="400" height="56" rx="12" fill="#fffbeb" stroke="#fcd34d"/>
+    <rect x="560" y="890" width="6" height="56" rx="3" fill="#d97706"/>
+    <text x="582" y="913" font-size="15" font-weight="700" fill="#92400e">Deterministic template reply sent</text>
+    <text x="582" y="933" font-size="13" fill="#475569">Always states the real decision · mismatch is logged</text>
+
+    <!-- end -->
+    <rect x="165" y="1000" width="270" height="52" rx="26" fill="#16a34a"/>
+    <path d="M196 1026 L203 1033 L217 1018" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="312" y="1032" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Explained reply sent</text>
+  </g>
+</svg>

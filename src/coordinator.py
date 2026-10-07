@@ -28,6 +28,15 @@ from src.agents.schemas import PolicyOutput
 _session_memory: dict[str, list[dict]] = {}
 MAX_MEMORY_TURNS = 10
 
+# Issue-specific retrieval queries - "late refund policy" alone matched the
+# refund policy's heading chunk rather than the delay clause.
+POLICY_QUERIES = {
+    "damaged": "refund for item damaged in delivery, warehouse packaging or courier fault",
+    "late": "refund when delivery is delayed more than 48 hours",
+    "lost": "refund when parcel is lost in transit",
+    "wrong_address": "refund when parcel is delivered to the wrong address",
+}
+
 
 def call_policy_agent(query: str, session_id: str = "-") -> PolicyOutput:
     """Public entry point to the Policy Agent (IR/RAG) - used internally by
@@ -113,7 +122,8 @@ def handle_request(
     trace["investigation"] = investigation.model_dump()
 
     progress("Checking applicable policy...")
-    policy = _call_policy_agent(f"{intake.issue_type} refund policy", session_id)
+    policy_query = POLICY_QUERIES.get(intake.issue_type, f"{intake.issue_type} refund policy")
+    policy = _call_policy_agent(policy_query, session_id)
     trace["policy"] = policy.model_dump()
 
     progress("Deciding the resolution...")
