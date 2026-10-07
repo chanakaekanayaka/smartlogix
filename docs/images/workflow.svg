@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 990" width="1100" height="990" role="img" aria-label="Step-by-step trace of one request for order ORD10008 through the four agents">
+  <rect width="1100" height="990" rx="20" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <g font-family="Segoe UI, -apple-system, Helvetica Neue, Arial, sans-serif">
+    <text x="40" y="52" font-size="26" font-weight="800" fill="#0f172a">How a Request Flows</text>
+    <text x="40" y="80" font-size="15" fill="#64748b">A real trace from the running system: order ORD10008, a late delivery</text>
+
+    <!-- timeline -->
+    <line x1="64" y1="179" x2="64" y2="899" stroke="#cbd5e1" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+
+    <!-- STEP 1 customer -->
+    <g>
+      <rect x="110" y="120" width="950" height="118" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+      <circle cx="64" cy="179" r="22" fill="#475569"/>
+      <text x="64" y="186" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+      <text x="134" y="154" font-size="12" font-weight="700" fill="#475569" letter-spacing="1">STEP 1 · CUSTOMER</text>
+      <text x="134" y="180" font-size="18" font-weight="700" fill="#0f172a">Customer reports a problem</text>
+      <text x="134" y="206" font-size="14" fill="#475569">Signed-in user writes in the chat</text>
+      <text x="134" y="226" font-size="14" fill="#475569">(JWT session verified first)</text>
+      <rect x="600" y="138" width="436" height="82" rx="18" fill="#2563eb"/>
+      <text x="624" y="173" font-size="16" fill="#ffffff">My delivery ORD10008 is very late,</text>
+      <text x="624" y="197" font-size="16" fill="#ffffff">when will it arrive?</text>
+    </g>
+
+    <!-- STEP 2 intake -->
+    <g>
+      <rect x="110" y="264" width="950" height="118" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+      <circle cx="64" cy="323" r="22" fill="#2563eb"/>
+      <text x="64" y="330" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+      <text x="134" y="298" font-size="12" font-weight="700" fill="#2563eb" letter-spacing="1">STEP 2 · INTAKE AGENT</text>
+      <text x="134" y="324" font-size="18" font-weight="700" fill="#0f172a">Understands the message</text>
+      <text x="134" y="350" font-size="14" fill="#475569">Injection filter passed → spaCy NER →</text>
+      <text x="134" y="370" font-size="14" fill="#475569">LLM extracts the structured fields</text>
+      <rect x="600" y="276" width="436" height="94" rx="10" fill="#0f172a"/>
+      <g font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="13.5" xml:space="preserve">
+        <text x="620" y="304"><tspan fill="#93c5fd">issue_type:</tspan><tspan fill="#fde68a"> "late"</tspan></text>
+        <text x="620" y="328"><tspan fill="#93c5fd">order_id:  </tspan><tspan fill="#fde68a"> "ORD10008"</tspan><tspan fill="#86efac">  ✓ found in text</tspan></text>
+        <text x="620" y="352"><tspan fill="#93c5fd">urgency:   </tspan><tspan fill="#fde68a"> "high"</tspan></text>
+      </g>
+    </g>
+
+    <!-- STEP 3 investigation -->
+    <g>
+      <rect x="110" y="408" width="950" height="118" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+      <circle cx="64" cy="467" r="22" fill="#7c3aed"/>
+      <text x="64" y="474" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+      <text x="134" y="442" font-size="12" font-weight="700" fill="#7c3aed" letter-spacing="1">STEP 3 · INVESTIGATION AGENT</text>
+      <text x="134" y="468" font-size="18" font-weight="700" fill="#0f172a">Checks the evidence</text>
+      <text x="134" y="494" font-size="14" fill="#475569">Loads the order and courier records, then</text>
+      <text x="134" y="514" font-size="14" fill="#475569">applies the rules for a late delivery</text>
+      <rect x="600" y="420" width="436" height="94" rx="10" fill="#0f172a"/>
+      <g font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="13.5" xml:space="preserve">
+        <text x="620" y="448"><tspan fill="#93c5fd">courier_past_delay_count:</tspan><tspan fill="#fde68a"> 13</tspan><tspan fill="#94a3b8">  (≥ 5)</tspan></text>
+        <text x="620" y="472"><tspan fill="#93c5fd">weather_flag:</tspan><tspan fill="#fde68a"> false</tspan></text>
+        <text x="620" y="496"><tspan fill="#93c5fd">likely_fault:</tspan><tspan fill="#fde68a"> "courier"</tspan></text>
+      </g>
+    </g>
+
+    <!-- STEP 4 policy -->
+    <g>
+      <rect x="110" y="552" width="950" height="118" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+      <circle cx="64" cy="611" r="22" fill="#0d9488"/>
+      <text x="64" y="618" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+      <text x="134" y="586" font-size="12" font-weight="700" fill="#0d9488" letter-spacing="1">STEP 4 · POLICY AGENT (HTTP)</text>
+      <text x="134" y="612" font-size="18" font-weight="700" fill="#0f172a">Retrieves the policy</text>
+      <text x="134" y="638" font-size="14" fill="#475569">POST /retrieve with API key →</text>
+      <text x="134" y="658" font-size="14" fill="#475569">ChromaDB vector search, top-3 chunks</text>
+      <rect x="600" y="564" width="436" height="94" rx="10" fill="#0f172a"/>
+      <g font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="13.5" xml:space="preserve">
+        <text x="620" y="592"><tspan fill="#93c5fd">sources:</tspan><tspan fill="#fde68a"> 03_delivery_sla.md,</tspan></text>
+        <text x="693" y="616"><tspan fill="#fde68a">01_refund_policy.md</tspan></text>
+        <text x="620" y="640"><tspan fill="#94a3b8">"delayed by more than 48 hours"</tspan></text>
+      </g>
+    </g>
+
+    <!-- STEP 5 resolution -->
+    <g>
+      <rect x="110" y="696" width="950" height="118" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+      <circle cx="64" cy="755" r="22" fill="#d97706"/>
+      <text x="64" y="762" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+      <text x="134" y="730" font-size="12" font-weight="700" fill="#b45309" letter-spacing="1">STEP 5 · RESOLUTION AGENT</text>
+      <text x="134" y="756" font-size="18" font-weight="700" fill="#0f172a">Decides and explains</text>
+      <text x="134" y="782" font-size="14" fill="#475569">Rule table decides; the LLM only writes</text>
+      <text x="134" y="802" font-size="14" fill="#475569">the reply, which the guard then checks</text>
+      <rect x="600" y="708" width="436" height="94" rx="10" fill="#0f172a"/>
+      <g font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="13.5" xml:space="preserve">
+        <text x="620" y="736"><tspan fill="#93c5fd">rule:  </tspan><tspan fill="#fde68a"> late × courier</tspan></text>
+        <text x="620" y="760"><tspan fill="#93c5fd">action:</tspan><tspan fill="#fde68a"> "partial_refund"</tspan></text>
+        <text x="620" y="784"><tspan fill="#93c5fd">guard: </tspan><tspan fill="#86efac"> ✓ reply matches decision</tspan></text>
+      </g>
+    </g>
+
+    <!-- STEP 6 reply -->
+    <g>
+      <rect x="110" y="840" width="950" height="118" rx="14" fill="#f0fdf4" stroke="#86efac"/>
+      <circle cx="64" cy="899" r="22" fill="#16a34a"/>
+      <path d="M54 899 L61 906 L75 891" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="134" y="874" font-size="12" font-weight="700" fill="#15803d" letter-spacing="1">STEP 6 · REPLY</text>
+      <text x="134" y="900" font-size="18" font-weight="700" fill="#0f172a">Customer gets an explained answer</text>
+      <text x="134" y="926" font-size="14" fill="#475569">Every step is written to the audit log,</text>
+      <text x="134" y="946" font-size="14" fill="#475569">with the phone number encrypted</text>
+      <rect x="600" y="852" width="436" height="94" rx="14" fill="#ffffff" stroke="#bbf7d0"/>
+      <rect x="616" y="864" width="186" height="24" rx="12" fill="#fffbeb" stroke="#fcd34d"/>
+      <text x="709" y="881" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">Partial Refund Approved</text>
+      <text x="618" y="912" font-size="14" fill="#0f172a">You will receive a refund of 50% of the delivery</text>
+      <text x="618" y="932" font-size="14" fill="#0f172a">fee, processed within 5-7 working days.</text>
+    </g>
+  </g>
+</svg>

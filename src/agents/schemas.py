@@ -54,3 +54,8 @@ class ResolutionOutput(BaseModel):
     ]
     escalate_to_human: bool
     final_answer: str
+    # Which policy clause the decision rests on, and whether the customer
+    # reply is the LLM's wording or the deterministic fallback template
+    # (used when the LLM reply contradicted the decision).
+    policy_basis: Optional[str] = None
+    reply_source: Literal["llm", "template"] = "llm"
